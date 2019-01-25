@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+</head>
+<body>
+<script>
+    function Date(day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+
+        this.getDay = function () {
+            return this.day;
+        };
+
+        this.getMonth = function () {
+            return this.month;
+        };
+
+        this.getYear = function () {
+            return this.year;
+        };
+
+        this.setDay = function (day) {
+            return this.day = day;
+        };
+
+        this.setMonth = function (month) {
+            return this.month = month;
+        };
+
+        this.setYear = function (year) {
+            return this.year = year;
+        }
+    }
+
+    let date = new Date(2, 2, 2007);
+
+
+    let month = date.getMonth();
+
+    let year = date.getYear();
+    date.setDay(1);
+    let day = date.getDay();
+    alert(day + "/" + month + "/" + year);
+</script>
+</body>
+</html>
